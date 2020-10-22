@@ -1,0 +1,821 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <title>Project2</title>
+    <style>
+        body {
+            margin: 0;
+
+        }
+
+        .veganbox {
+
+            width: 100%;
+            height: 750px;
+            background-image: url("image/vegan.jpg");
+            background-color: #eeeeee;
+            opacity: 0.7;
+            background-position: 50% 50%;
+            background-size: cover;
+            overflow: hidden;
+
+        }
+
+        .veganbox h1 {
+            padding-top: 13%;
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            font-weight: 600;
+            text-align: center;
+            color: #000000;
+            letter-spacing: .2em;
+        }
+
+        .veganbox h4 {
+            padding: 0 150px 0 150px;
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 549;
+            text-align: center;
+            color: #8b8b99;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        .mainbox {
+            width: 100%;
+
+            height: 700px;
+            border-collapse: collapse;
+        }
+
+        .mainbox h1 {
+            font-size: 32px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: white;
+            font-style: normal;
+            line-height: 1.6;
+            letter-spacing: 0.5px;
+        }
+
+        .mainbox p {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 545;
+            text-align: center;
+            color: white;
+            padding: 0 40px 0 40px;
+            letter-spacing: 0.8px;
+            line-height: 1.5;
+        }
+
+        .box1 {
+            width: 25%;
+            background-color: #5acda6;
+            height: 700px;
+            float: left;
+
+        }
+
+        .box2 {
+            width: 25%;
+            background-color: #91ac41;
+            height: 700px;
+            float: left;
+        }
+
+        .box3 {
+            width: 25%;
+            background-color: #e4b476;
+            height: 700px;
+            float: left;
+        }
+
+        .box4 {
+            width: 25%;
+            background-color: #f69dad;
+            height: 700px;
+            float: left;
+        }
+
+        .img {
+            padding: 27% 10% 2% 37%;
+        }
+
+        .mainbox2 {
+            overflow: hidden;
+            width: 100%;
+            background-color: #f7eee2;
+            height: 900px;
+            padding-top: 8%;
+        }
+
+        .mainbox2 h1 {
+            font-size: 60px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 1.2;
+        }
+
+        .mainbox2 h2 {
+            font-size: 33px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+        }
+
+        .mainbox2 p {
+            font-size: 23px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            color: #8b8b99;
+            font-style: normal;
+            letter-spacing: 0.8px;
+            padding: 0 40px 0 40px;
+        }
+
+        .box1of2 {
+            width: 23%;
+            background-color: #f7eee2;
+            height: 600px;
+            float: left;
+            margin-left: 65px;
+        }
+
+        .box2of2 {
+            width: 23%;
+            background-color: #f7eee2;
+            height: 600px;
+            float: left;
+        }
+
+        .box3of2 {
+            width: 23%;
+            background-color: #f7eee2;
+            height: 600px;
+            float: left;
+        }
+
+        .box4of2 {
+            width: 23%;
+            background-color: #f7eee2;
+            height: 600px;
+            float: left;
+            padding-right: 50px;
+        }
+
+        .img1 {
+            padding: 27% 0 2% 30%;
+        }
+
+        .mainbox3 {
+            margin-top: 9%;
+            width: 100%;
+            background-color: white;
+            height: 1100px;
+        }
+
+        .mainbox3 h1 {
+            font-size: 60px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+            font-weight: 600;
+            font-style: normal;
+            line-height: 1.2;
+        }
+
+        .mainbox3 h2 {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            text-align: center;
+            color: black;
+            margin-bottom: 0;
+        }
+
+        .mainbox3 h3 {
+            font-size: 20px;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            color: #8b8b99;
+            font-style: normal;
+            letter-spacing: 0.8px;
+            padding: 0 20% 4% 20%;
+        }
+
+        .mainbox3 h5 {
+            text-align: center;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-style: italic;
+            line-height: 1.6;
+            margin-top: 0;
+            color: #8b8b99;
+            font-weight: 50;
+
+        }
+
+        .mainbox3 p {
+
+            font-style: italic;
+            font-family: 'Poppins', sans-serif;
+            font-weight: 500;
+            text-align: center;
+            color: #8b8b99;
+            font-size: 20px;
+            letter-spacing: 1px;
+            line-height: 1.5;
+            padding: 0 15% 5% 15%;
+        }
+
+        .box1of3 {
+            width: 28%;
+            background-color: #f5f6fb;
+            height: 575px;
+            float: left;
+            margin-left: 90px;
+            margin-right: 30px;
+            border-radius: 50px 0 50px 50px;
+        }
+
+        .box2of3 {
+            width: 28%;
+            background-color: #f5f6fb;
+            height: 500px;
+            float: left;
+            margin-right: 30px;
+            margin-top: 2%;
+            border-radius: 50px 0 50px 50px;
+        }
+
+        .box3of3 {
+            width: 28%;
+            background-color: #f5f6fb;
+            height: 575px;
+            float: left;
+            margin-right: 50px;
+            border-radius: 50px 0 50px 50px;
+        }
+
+        .img2 {
+            padding: 10% 0 2% 40%;
+        }
+
+        .divabout {
+            width: 100%;
+            height: 620px;
+
+
+        }
+
+        .box1_about {
+            width: 66%;
+            height: 620px;
+
+            float: left;
+        }
+
+        .abt_us_img {
+            display: block;
+            height: 0;
+            max-height: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            width: 0;
+            margin: auto;
+        }
+
+        .box2_about {
+            width: 34%;
+            height: 620px;
+            background-color: darksalmon;
+            opacity: 0.9;
+
+            float: left;
+        }
+
+        .box2_about h1 {
+            font-family: sans-serif;
+            font-size: 50px;
+            font-weight: 700;
+            padding: 10% 0 1% 15%;
+
+        }
+
+        .box2_about p {
+            font-family: sans-serif;
+            font-size: 20px;
+            font-weight: 550;
+            padding: 1% 10% 2% 15%;
+            margin-bottom: 13%;
+        }
+
+        .mail {
+            padding: 3% 2%;
+            width: 62%;
+            margin-left: 15%;
+            margin-right: 35%;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            margin-bottom: 3%;
+        }
+
+        .btn {
+            width: 220px;
+            height: 55px;
+            margin-left: 15%;
+            border-radius: 5px;
+            border: none;
+            border-radius: 5px;
+            border: none;
+            font-size: 20px;
+            font-weight: 500;
+            color: white;
+            background-color: rgb(179, 19, 51);
+        }
+
+        .numb_box {
+            width: 100%;
+            overflow: hidden;
+            height: 450px;
+
+        }
+
+        .num_b1 {
+            width: 25%;
+            height: 450px;
+            background-color: #f6fcfa;
+            float: left;
+        }
+
+        .num_b2 {
+            width: 25%;
+            height: 450px;
+            background-color: #f6fcfa;
+            float: left;
+        }
+
+        .num_b3 {
+            width: 25%;
+            height: 450px;
+            background-color: #f6fcfa;
+            float: left;
+        }
+
+        .num_b4 {
+            width: 25%;
+            height: 450px;
+            background-color: #f6fcfa;
+            float: left;
+        }
+
+        .numb_box h2 {
+            line-height: 1.3;
+            font-family: 'Poppins', sans-serif;
+            font-size: 3.5rem;
+            text-align: center;
+            box-sizing: border-box;
+            margin-block-end: 0;
+            padding-top: 35%;
+            font-weight: 600;
+
+        }
+
+        .numb_box h3 {
+            color: #57e3b5;
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            font-weight: 10;
+            text-align: center;
+            font-style: italic;
+        }
+
+        .frame_vd {
+            width: 100%;
+            overflow: hidden;
+            height: 1700px;
+            background-color: white;
+        }
+
+        .frame_vd h1 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 60px;
+            line-height: 1.2;
+            margin-bottom: 2%;
+            text-align: center;
+            padding-top: 5%;
+            color: #8b8b99;
+            font-weight: 250;
+        }
+
+        .imgbox {
+            width: 980px;
+            height: 700px;
+            margin: auto;
+            margin-top: 5%;
+
+        }
+
+        .imgbox1 {
+            width: 900px;
+            height: 500px;
+            margin: auto;
+            margin-top: 5%;
+
+        }
+
+        .imgbb {
+            display: block;
+            height: 0;
+            max-height: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            width: 0;
+            margin: auto;
+        }
+
+        .footer {
+            width: 100%;
+            height: 800px;
+
+        }
+
+        .lfoot {
+            width: 50%;
+            height: 800px;
+            float: left;
+            background-color: white;
+        }
+
+        .lfoot h4 {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.3;
+            color: #91ac41;
+            margin-bottom: 0;
+            padding-left: 10%;
+            font-weight: 50;
+        }
+
+        .lfoot p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            padding-left: 10%;
+            margin-block-start: 0;
+            color: #8b8b99;
+        }
+
+        .lfoot h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 55px;
+            padding-left: 10%;
+            font-weight: 600;
+            margin-block-start: 0;
+        }
+
+        .lfoot_lsub {
+            width: 45%;
+            height: 500px;
+            background-color: white;
+            margin-left: 10%;
+            float: left;
+        }
+
+        .lfoot_lsub h2 {
+
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+
+        }
+
+        .lfoot_lsub p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            padding-left: 0;
+            color: #8b8b99;
+        }
+
+        .lfoot_rsub {
+            width: 45%;
+            height: 500px;
+            background-color: white;
+            float: left;
+        }
+
+        .lfoot_rsub h2 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 30px;
+        }
+
+        .lfoot_rsub p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            padding-left: 0;
+            color: #8b8b99;
+        }
+
+        .rfoot {
+            width: 50%;
+            height: 800px;
+            background-color: white;
+            float: left;
+        }
+
+        .rfoot h4 {
+            font-family: 'Caveat', cursive;
+            font-size: 1.5rem;
+            font-style: italic;
+            line-height: 1.3;
+            color: #91ac41;
+            margin-bottom: 0;
+            padding-left: 10%;
+            font-weight: 50;
+        }
+
+        .rfoot p {
+            font-family: 'Poppins', sans-serif;
+            font-size: 20px;
+            padding-left: 10%;
+            margin-block-start: 0;
+            color: #8b8b99;
+        }
+
+        .rfoot h3 {
+            font-family: 'Poppins', sans-serif;
+            font-size: 55px;
+            padding-left: 10%;
+            font-weight: 600;
+            margin-block-start: 0;
+        }
+
+        .info{
+            
+            padding: 3%;
+            margin: 1.8% 0 0 10%;
+            width: 75%;
+            border-radius: 10px;
+            border: 1px solid #e5e6ec;
+        }
+
+        .btn_foot{
+            background-color: #aad236;
+            border-radius: 4px;
+            margin-left: 10%;
+            margin-top: 2%;
+            width: 200px;
+            height: 50px;
+            font-size: 20px;
+            font-weight: 550;
+            color: white;
+            border: 1px solid #aad236;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="veganbox">
+        <h1>Vegan Store Simple Website <br>Tempalet</h1>
+        <h4>
+            With nutrition, all the vital functions of the body are connected. It is the source of the development of
+            tissues and cells, their constant renewal, the saturation of man with energy.
+        </h4>
+    </div>
+
+    <div class="mainbox">
+        <div class="box1">
+            <img class="img" src="image/kaatar2.png">
+            <h1>step 01. </h1>
+            <p>
+                Vegetables are an integral part of the human diet. They are extremely useful because of the high content
+                of carbohydrates, various acids, vitamins and active elements in the form, easy for digestion.
+            </p>
+        </div>
+        <div class="box2">
+            <img class="img" src="image/brush.png">
+            <h1>step 02. </h1>
+            <p>
+                Fresh tomatoes are ideal for replenishing the loss of minerals. These vegetables contain a lot of acids
+                that our body needs for full-fledged work.
+            </p>
+        </div>
+        <div class="box3">
+            <img class="img" src="image/bag.png">
+            <h1>step 03. </h1>
+            <p>
+                In the content of vitamin C, sweet peppers are superior to lemons and even black currants! The greatest
+                amount of vitamin is contained around the stalk, that is, in the part of the product that is usually cut
+                during cleaning.
+            </p>
+        </div>
+        <div class="box4">
+            <img class="img" src="image/smily.png">
+            <h1>step 04. </h1>
+            <p>
+                If you sometimes eat hot chili peppers, this will help normalize cerebral circulation, ease the
+                condition with bronchial asthma, cough, sore throat, flu.
+            </p>
+        </div>
+    </div>
+
+    <div class=" mainbox2">
+        <h4
+            style="font-weight: 200; font-size: 25px; color: yellowgreen; text-align: center; font-family: 'Caveat',cursive;">
+            <i>Fresh Food</i></h4>
+        <h1>Our Vegan Store!</h1>
+        <p style="text-align: center;">
+            Radish contains a lot of fiber, pectin and mineral salts.
+        </p>
+
+        <div class="box1of2">
+            <img class="img1" src="image/11a.png">
+            <h2>Fresh Vegetables </h2>
+            <p> Use for cooking several types of vegetable oil.</p>
+        </div>
+        <div class="box2of2">
+            <img class="img1" src="image/2a.png">
+            <h2>High Quality</h2>
+            <p>
+                This is the best source of essential fatty acids for the body.
+            </p>
+        </div>
+        <div class="box3of2">
+            <img class="img1" src="image/33a.png">
+            <h2>Sale </h2>
+            <p>
+                It is very good, if in the kitchen there will always be several bottles with different oils.
+            </p>
+        </div>
+        <div class="box4of2">
+            <img class="img1" src="image/44a.png">
+            <h2>Best Price</h2>
+            <p>
+                Remember that unrefined oils are not suitable for heat treatment.
+            </p>
+        </div>
+    </div>
+
+    <div class="mainbox3">
+        <h4
+            style="font-weight: 200; font-size: 25px; color: yellowgreen; text-align: center; font-family: 'Caveat',cursive;">
+            <i>Fresh Food</i></h4>
+        <h1>Our Vegan Shop!</h1>
+        <h3 style=" font-size: 25px;">
+            According to experts, any habit can be formed in 21 days. The same statement applies to healthy eating.
+        </h3>
+
+        <div class="box1of3">
+            <img class="img2" src="image/about1.png">
+
+            <p>Sales consultants are very polite. Many of the products have tried and are ready
+                to prompt and recommend to customers. The staff shows that they completely share the philosophy of
+                proper nutrition, if you can say so.</p>
+            <h2>VERONICA KING </h2>
+            <h5>cook</h5>
+        </div>
+        <div class="box2of3">
+            <img class="img2" src="image/about2.png">
+
+            <p>The assortment is very wide. From useful organic oils, cereals and teas to
+                specific products for vegetarians, such as sausages and pies without meat. </p>
+            <h2>JIM CASH</h2>
+            <h5>seller</h5>
+        </div>
+        <div class="box3of3">
+            <img class="img2" src="image/about3.png">
+
+            <p>I want to say a huge thank you to the management of the store and all its
+                employees, I'm not a vegetarian, it would seem that the store is not for me, but it's not so, any person
+                who comes here will find something useful.</p>
+            <h2>PETER GOODMAN</h2>
+            <h5>manager</h5>
+        </div>
+    </div>
+
+    <div class="divabout">
+        <div class="box1_about">
+            <img class="abt_us_img" src="image/19.jpg">
+        </div>
+        <div class="box2_about">
+            <h1>Follow Us</h1>
+            <p>
+                A wide range of products; many unusual and tasty products; courteous staff.
+            </p>
+
+            <div>
+                <input class="mail" type="email" placeholder=" Your Email">
+            </div>
+            <div>
+                <button class="btn">SUBSCRIBE</button>
+            </div>
+        </div>
+    </div>
+
+    <div class="numb_box">
+        <div class="num_b1">
+            <h2>7</h2>
+            <h3>Year of experiances</h3>
+        </div>
+        <div class="num_b2">
+            <h2>123K</h2>
+            <h3>Happy Customer</h3>
+        </div>
+        <div class="num_b3">
+            <h2>72K</h2>
+            <h3>100% Satisfaction</h3>
+        </div>
+        <div class="num_b4">
+            <h2>13K</h2>
+            <h3>Detox Smoothies</h3>
+        </div>
+    </div>
+
+    <div class="frame_vd">
+
+        <h1>Vimeo Video</h1>
+
+        <div class="imgbox1">
+            <img class="imgbb" src="image/vdo.png">
+        </div>
+
+        <div class="imgbox">
+            <img class="imgbb" src="image/06.jpg">
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="lfoot">
+            <h4>Contact Us</h4>
+            <h3>Address Information</h3>
+            <p>
+                Overeating is one of the most common causes of overweight and digestive problems.
+            </p>
+
+            <div class="lfoot_lsub">
+                <h2>London Store</h2>
+                <p>Roeterseiland Campus Building E</p>
+                <p>
+                    16th floor London
+                </p>
+                <p>
+                    Monday to Friday : 9am to 8pm
+                </p>
+                <p>
+                    examplemail.mail.com
+                </p>
+            </div>
+
+            <div class="lfoot_rsub">
+                <h2>Berlin Store</h2>
+
+                <p>Roeterseiland Campus Building E</p>
+                <p>
+                    12th floor Berlin
+                </p>
+                <p>
+                    Monday to Friday : 9am to 8pm
+                </p>
+                <p>
+                    examplemail.mail.com
+                </p>
+            </div>
+
+        </div>
+        <div class="rfoot">
+            <h4>Meet Our Team</h4>
+            <h3>Get In Touch</h3>
+            <p>
+
+                The task of proper nutrition - to remove from the diet harmful food and enrich it useful.
+
+            </p>
+
+            <div><input class="info" type="text" placeholder="Name"></div>
+            <div><input class="info" type="number" placeholder="Phone"></div>
+            <div><input class="info" type="text" placeholder="Subject"></div>
+            <div><input class="info" type="email" placeholder="Email"></div>
+            <textarea name="form[data][4][1]" rows="5" data-form-field="Message" placeholder="Message"  class="info"></textarea>
+
+            <div>
+                <button class="btn_foot">SUBMIT NOW</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
