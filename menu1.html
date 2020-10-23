@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>navbar</title>
+    
+    <style>
+        body{
+            margin: 0;
+
+        }
+        ul{
+            list-style-type: none;
+            margin: 0;
+            overflow: auto;
+            background-color: tomato;
+        }
+
+        ul li{
+            float: left;
+            width: 200px;
+            text-align: center;
+            transition: 1s;
+        }
+
+        ul li a{
+            line-height: 50px;
+            color: white;
+            text-decoration: none;
+
+        }
+        ul li:hover a{
+            background-color: white;
+            font-size: 20px;
+            color: red;
+        }
+        ul li:hover{
+            background-color: white;
+            color: red;   
+            box-shadow: 0 0 2px;
+        }
+    </style>
+</head>
+<body>
+    <div>
+       <ul>
+           <li><a href="#">Register</a></li>
+           <li><a href="#">Login</a></li>
+           <li><a href="#">Items</a></li>
+           <li><a href="#">Price</a></li>
+           <li><a href="#">Cart</a></li>
+       </ul>
+    </div>
+</body>
+</html>
